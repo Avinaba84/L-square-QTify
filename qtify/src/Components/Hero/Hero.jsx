@@ -1,23 +1,19 @@
-import React from "react";
-import styles from "./Hero.module.css";
-
-function Hero(){
-    return(
-    <div className={styles.Hero}>
-        <div>
-            <h1>100 Thousand Songs ad-free</h1>
-            <h1>Over thousands podcast episodes</h1>
-        </div>
-        <div>
-          <img
-          src={requestAnimationFrame("../../assets/hero_headphones.png")} 
-          width ={212}
-          alt="headphones"
-          />
-       </div>
-    </div>
-
-    );
+import React from 'react'
+import HeroImage from '../../assets/hero_headphones.png'
+import styles from "../Hero/Hero.module.css";
+const Hero = () => {
+  return (
+    <>  
+        <section className={styles.Hero}>
+            <div className={styles.HeroTitle}>
+                <h1>100 Thousand Songs, ad-free</h1>
+                <h1>Over thousands podcast episodes</h1>
+            </div>
+                <img className={styles.HeroImage} src={HeroImage} alt='headphone'/>
+        </section>
+    </>
+  )
 }
 
-export default Hero;
+export default Hero
+// rcfe: react component function export
